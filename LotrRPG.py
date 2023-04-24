@@ -50,7 +50,7 @@ if your_character == gimli:
 
 # Plot below
 talk_list = ["Hello!", "How are you?", "Good day!", "Hello there!", "Greetings."]
-bad_talk_list = ["I will destroy you.", "Get ready to die.", "This will be your last moment alive."]
+bad_talk_list = ["I will destroy you.", "Get ready to die.", "This will be your last moment alive.", "Middle Earth will fall."]
 how_are_you = ["I am great!", "I am fine.", "I am good!", "I am okay."]
 frodo_quote = ["All right then, keep you secrets.", "I will take the Ring to Mordor, though I do not know the way.", "You're late."]
 sam_quote = ["Po-tay-toes. Boil em, mash em, stick em in a stew.", "There's some good in this world, Mister Frodo, and it's worth fighting for.", "I can't carry it for you, but I can carry you!"]
@@ -64,7 +64,7 @@ kill_hobbit_list = ["You tried to kill some hobbits but they escaped.", "You kil
 kill_human_list = ["You tried to kill some humans but they escaped.", "You killed some humans.", "The humans fought back but you killed them."]
 kill_elf_list = ["You tried to kill some elves but they escaped.", "You killed some elves.", "The elves fought back but you killed them.", "The elves fought back and escaped."]
 kill_ent_list = ["You tried to kill some ents but they escaped.", "You killed some ents.", "The ents fought back but you killed them.", "The ents fought back and escaped."]
-food_list = ["Lembas bread", "potato", "mushrooms", "pippin", "fish", "firewood", "coneys"]
+food_list = ["Lembas bread", "potato", "mushrooms", "pippin", "fish", "firewood", "coneys", "cram"]
 
 while True:
     action_1 = input("What do you want to do? (options: Talk, Smoke, Fight, Quote, Travel, Explore, Inventory, Eat)")
@@ -77,6 +77,15 @@ while True:
             if answer == "yes":
                 print("You ate lembas bread.")
                 inventory.remove("Lembas bread")
+                yesno = True
+            else:
+                print("You did not eat lembas bread.")
+        if "cram" in inventory:
+            answer_ = input("Do you want to eat cram?")
+            answer = answer_.lower().strip()
+            if answer == "yes":
+                print("You ate cram.")
+                inventory.remove("cram")
                 yesno = True
             else:
                 print("You did not eat lembas bread.")
@@ -171,6 +180,15 @@ while True:
                     else:
                         print("You put the Lembas bread in your inventory.")
                         inventory.append("Lembas bread")
+                if food == "cram":
+                    print("You saw a man of Lake Town and he gave you cram..")
+                    answer_ = input("Eat it or save it?")
+                    answer = answer_.lower().strip()
+                    if answer == "eat" or answer == "eat it":
+                        print("You ate the cram.")
+                    else:
+                        print("You put the cram in your inventory.")
+                        inventory.append("cram")
                 if food == "potato":
                     print("You found a potato")
                     answer_ = input("Eat it or save it?")
@@ -332,6 +350,8 @@ while True:
                 print("Guard of Gondor said: Welcome home my king!")
             if your_character == boromir:
                 print("Guard of Gondor said: Welcome home!")
+            if your_character == arwen:
+                print("Guard of Gondor said: Welcome home Lady Arwen.")
             if your_character == sauron:
                 print("Everyone runs away in terror.")
                 kill_human_1 = input("What would you like to do? (Kill, Leave)")
@@ -344,6 +364,8 @@ while True:
             your_character.go_to(rivendell)
             if your_character == arwen:
                 print("Erestor said: Welcome home Lady Arwen.")
+            if your_character == aragorn:
+                print("Erestor said: Welcome back Lord Aragorn.")
             if your_character == sauron:
                 print("Everyone runs away in terror.")
                 kill_elf_1 = input("What would you like to do? (Kill, Leave)")
@@ -381,7 +403,9 @@ while True:
         if destination == "mirkwood":
             your_character.go_to(mirkwood)
             if your_character == legolas:
-                print("Guard of Mirkwood said: Welcome home prince Legolas!")
+                print("Guard of Mirkwood said: Welcome home Prince Legolas!")
+            if your_character == gimli:
+                print("Guard of Mirkwood said: Welcome Gimli friend of Prince Legolas.")
             if your_character == sauron:
                 print("Everyone runs away in terror.")
                 kill_elf_1 = input("What would you like to do? (Kill, Leave)")
@@ -405,7 +429,7 @@ while True:
         if destination == "rohan":
             your_character.go_to(rohan)
             if your_character == merry:
-                print("Hama said: Welcome Meriadoc.")
+                print("Hama said: Welcome Meriadoc the halfling.")
             if your_character == sauron:
                 print("Everyone runs away in terror.")
                 kill_human_1 = input("What would you like to do? (Kill, Leave)")
