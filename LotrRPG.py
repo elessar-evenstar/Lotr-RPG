@@ -30,7 +30,7 @@ if your_character == sam:
 if your_character == legolas:
     inventory = ["bow", "arrows"]
 if your_character == gandalf:
-    inventory = ["Staff", "pipe"]
+    inventory = ["staff", "pipe"]
 if your_character == aragorn:
     inventory = ["Anduril", "pipe", "Evenstar necklace"]
 if your_character == boromir:
@@ -55,7 +55,7 @@ how_are_you = ["I am great!", "I am fine.", "I am good!", "I am okay."]
 frodo_quote = ["All right then, keep you secrets.", "I will take the Ring to Mordor, though I do not know the way.", "You're late."]
 sam_quote = ["Po-tay-toes. Boil em, mash em, stick em in a stew.", "There's some good in this world, Mister Frodo, and it's worth fighting for.", "I can't carry it for you, but I can carry you!"]
 legolas_quote = ["They're taking the Hobbits to Isengard!", "You have my bow.", "Lembas bread. One small bite is enough to fill the stomach of a grown man."]
-gandalf_quote = ["A wizard is never late, nor is he early. He arrives precisely when he means to.", "You shall not pass!!!", "When in doubt, always follow your nose." "Fool of a Took!"]
+gandalf_quote = ["A wizard is never late, nor is he early. He arrives precisely when he means to.", "You shall not pass!!!", "When in doubt, always follow your nose.", "Fool of a Took!"]
 aragorn_quote = ["For Frodo.", "Let the Lord of the black land come forth! Let justice be done upon him!", "I summon you to fulfill your oath."]
 boromir_quote = ["It is a gift.", "One does not simply walk into Mordor.", "It is a strange fate that we should suffer so much fear and doubt over so small a thing."]
 sauron_quote = ["I see you..." "I SEE YOU...", "There is no life in the void, only death..."]
