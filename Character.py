@@ -136,5 +136,5 @@ galadriel = Character("Galadriel", "elf", 10, "nothing", "telling the future", "
 haldir = Character("Haldir", "elf", 8, "bow and arrows", "fighting", "brave")
 arwen = Character("Arwen", "elf", 6, "sword", "healing", "kind")
 merry = Character("Merry", "hobbit", 5, "small sword", "smoking", "funny")
-pippin = Character("Pippin", "elf", 4, "small sword", "smoking", "foolish")
+pippin = Character("Pippin", "hobbit", 4, "small sword", "smoking", "foolish")
 gimli = Character("Gimli", "dwarf", 7, "axe", "fighting", "gruff")

@@ -88,7 +88,7 @@ while True:
                 inventory.remove("cram")
                 yesno = True
             else:
-                print("You did not eat lembas bread.")
+                print("You did not eat cram.")
         if "potato" in inventory:
             answer_ = input("Do you want to eat a potato?")
             answer = answer_.lower().strip()
@@ -122,7 +122,7 @@ while True:
             if answer == "yes":
                 if "firewood" in inventory:
                     answer_ = input("Do you want to cook the fish?")
-                    answer = answer.lower.strip()
+                    answer = answer_.lower.strip()
                     if answer == "no":
                         print("You ate raw fish and now you are sick.")
                         inventory.remove("fish")
@@ -147,7 +147,7 @@ while True:
             if answer == "yes":
                 if "firewood" in inventory:
                     answer_ = input("Do you want to cook the coneys?")
-                    answer = answer.lower.strip()
+                    answer = answer_.lower().strip()
                     if answer == "no":
                         print("You ate raw coneys and now you are sick.")
                         inventory.remove("coneys")
